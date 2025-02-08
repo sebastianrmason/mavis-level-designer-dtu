@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAvis Level Designer – Goals & Walls</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header id="header">
+    <h1>MAvis Level Designer</h1>
+    <p>
+      Level designer for pathfinding problems for the MAvis environment @ DTU.
+    </p>
+  </header>
+  <div class="main-content">
+    <div id="sidebar">
+      <!-- Color Picker -->
+      <h3>Color</h3>
+      <div id="color-picker">
+        <div class="color-row">
+          <div class="color-option" data-color="blue"></div>
+          <div class="color-option" data-color="red"></div>
+          <div class="color-option" data-color="green"></div>
+          <div class="color-option" data-color="yellow"></div>
+          <div class="color-option" data-color="purple"></div>
+        </div>
+        <div class="color-row">
+          <div class="color-option" data-color="orange"></div>
+          <div class="color-option" data-color="pink"></div>
+          <div class="color-option" data-color="grey"></div>
+          <div class="color-option" data-color="lightblue"></div>
+          <div class="color-option" data-color="brown"></div>
+        </div>
+      </div>
+      <!-- Tools for initial state -->
+      <h3>Initial Tools</h3>
+      <div id="tools">
+        <div class="tool" data-type="agent">Agent</div>
+        <div class="tool" data-type="box">Box</div>
+        <div class="tool" data-type="+">Wall</div>
+        <div class="tool" data-type=" ">Empty/Remove</div>
+      </div>
+      <!-- Tools for goal state -->
+      <h3>Goal Tools</h3>
+      <div id="goal-tools">
+        <div class="tool" data-type="agent-goal">Agent Goal</div>
+        <div class="tool" data-type="box-goal">Box Goal</div>
+        <div class="tool" data-type="remove">Remove Goal</div>
+      </div>
+      <!-- Grid Size Controls -->
+      <div id="grid-size-controls">
+        <div class="grid-size-row">
+          <div class="grid-size-col">
+            <label for="grid-height">Height</label>
+            <input type="number" id="grid-height" min="3" max="20" value="7">
+          </div>
+          <div class="grid-size-col">
+            <label for="grid-width">Width</label>
+            <input type="number" id="grid-width" min="3" max="20" value="13">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Map wrapper (both grids are always visible) -->
+    <div id="map-wrapper">
+      <div id="initial-state-container"></div>
+      <div id="goal-state-container"></div>
+    </div>
+    <!-- Buttons -->
+    <div id="button-container">
+      <button id="reset-btn" class="tooltip" data-tooltip="Reset the grids">
+        <img src="reset-icon.png" alt="Reset Grid" id="reset-img">
+      </button>
+      <button id="export-btn" class="tooltip" data-tooltip="Export your level as .lvl">
+        <img src="download-icon.png" alt="Download Level" id="download-img">
+      </button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
