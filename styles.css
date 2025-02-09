@@ -90,36 +90,36 @@ body {
 }
 
 .color-option[data-color="blue"] {
-  background-color: #3050FF;
+  background-color: rgb(48, 80, 255);
 }
 .color-option[data-color="red"] {
-  background-color: #FF0000;
+  background-color: rgb(255, 0, 0);
 }
 .color-option[data-color="green"] {
-  background-color: #00FF00;
+  background-color: rgb(0, 255, 0);
 }
-.color-option[data-color="yellow"] {
-  background-color: #00FFFF;
+.color-option[data-color="cyan"] {
+  background-color: rgb(0, 255, 255);
 }
 .color-option[data-color="purple"] {
-  background-color: #F047C8;
+  background-color: rgb(96, 0, 176);
 }
 
 /* New Colors */
 .color-option[data-color="orange"] {
-  background-color: #FFA500;
+  background-color: rgb(255, 128, 0);
 }
 .color-option[data-color="pink"] {
-  background-color: #FFC0CB;
-}
-.color-option[data-color="grey"] {
-  background-color: #808080;
+  background-color: rgb(240, 96, 192);
 }
 .color-option[data-color="lightblue"] {
-  background-color: #ADD8E6;
+  background-color: rgb(112, 192, 255);
+}
+.color-option[data-color="grey"] {
+  background-color: rgb(112, 112, 112);
 }
 .color-option[data-color="brown"] {
-  background-color: #A52A2A;
+  background-color: rgb(96, 48, 0);
 }
 
 /* Tools and Goal Tools */
@@ -259,7 +259,7 @@ body {
 .agent-circle-goal-blue,
 .box-div-blue,
 .box-div-goal-blue {
-  background-color: #3050FF;
+  background-color: rgb(48, 80, 255);
 }
 
 /* Red */
@@ -267,7 +267,7 @@ body {
 .agent-circle-goal-red,
 .box-div-red,
 .box-div-goal-red {
-  background-color: #FF0000;
+  background-color: rgb(255, 0, 0);
 }
 
 /* Green */
@@ -275,15 +275,15 @@ body {
 .agent-circle-goal-green,
 .box-div-green,
 .box-div-goal-green {
-  background-color: #00FF00;
+  background-color: rgb(0, 255, 0)
 }
 
 /* Yellow */
-.agent-circle-yellow,
-.agent-circle-goal-yellow,
-.box-div-yellow,
-.box-div-goal-yellow {
-  background-color: #00FFFF;
+.agent-circle-cyan,
+.agent-circle-goal-cyan,
+.box-div-cyan,
+.box-div-goal-cyan {
+  background-color: rgb(0, 255, 255);
 }
 
 /* Purple */
@@ -291,7 +291,7 @@ body {
 .agent-circle-goal-purple,
 .box-div-purple,
 .box-div-goal-purple {
-  background-color: #F047C8;
+  background-color: rgb(96, 0, 176);
 }
 
 /* New Colors Agent & Box Classes */
@@ -300,7 +300,7 @@ body {
 .agent-circle-goal-orange,
 .box-div-orange,
 .box-div-goal-orange {
-  background-color: #FFA500;
+  background-color: rgb(255, 128, 0)
 }
 
 /* Pink */
@@ -308,7 +308,7 @@ body {
 .agent-circle-goal-pink,
 .box-div-pink,
 .box-div-goal-pink {
-  background-color: #FFC0CB;
+  background-color: rgb(240, 96, 192)
 }
 
 /* Grey */
@@ -316,7 +316,7 @@ body {
 .agent-circle-goal-grey,
 .box-div-grey,
 .box-div-goal-grey {
-  background-color: #808080;
+  background-color: rgb(112, 112, 112)
 }
 
 /* Lightblue */
@@ -324,7 +324,7 @@ body {
 .agent-circle-goal-lightblue,
 .box-div-lightblue,
 .box-div-goal-lightblue {
-  background-color: #ADD8E6;
+  background-color: rgb(112, 192, 255)
 }
 
 /* Brown */
@@ -332,7 +332,7 @@ body {
 .agent-circle-goal-brown,
 .box-div-brown,
 .box-div-goal-brown {
-  background-color: #A52A2A;
+  background-color: rgb(96, 48, 0)
 }
 
 /* Button Container & Buttons */
@@ -364,7 +364,7 @@ body {
 
 #reset-btn:hover,
 #export-btn:hover {
-  background-color: #0056b3;
+  background-color: #16375a;
   transform: scale(1.02);
 }
 
